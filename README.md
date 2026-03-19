@@ -1,16 +1,30 @@
-# Chatbot IT - Deep Learning Project
+#  Chatbot IT - Deep Learning Project
 
-## Descriere
-Acest proiect își propune dezvoltarea unui chatbot AI pentru suport IT.
+##  Descriere
+Acest proiect are ca scop dezvoltarea unui chatbot bazat pe Deep Learning, capabil să ofere suport IT automat.
 
-## Tehnologii
-- Python
-- TensorFlow / Keras
+Chatbot-ul va analiza mesajele utilizatorilor și va identifica tipul problemei (ex: imprimantă, rețea, autentificare,etc), oferind un răspuns corespunzător.
 
-## Structura
-- data/ - dataset
-- src/ - cod sursa
-- models/ - modele salvate
 
-## Status
-In dezvoltare
+##  Obiectiv
+- Clasificarea problemelor IT pe baza textului introdus
+- Oferirea unui răspuns automat pentru fiecare tip de problemă
+- Reducerea timpului de răspuns în suportul IT
+
+
+##  Dataset
+Dataset-ul este unul custom și conține exemple de mesaje și etichetele acestora.
+
+Exemplu:
+- "nu merge imprimanta" → printer
+- "nu am internet" → network
+- "nu ma pot loga" → login
+
+
+##  Model / Abordare
+- Preprocesare text (lowercase, tokenizare)
+- Vectorizare (Bag of Words)
+- Model: Rețea neuronală (Dense Neural Network)
+- Framework: TensorFlow / Keras
+
+
